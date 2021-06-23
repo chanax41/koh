@@ -133,15 +133,15 @@
                                         $result = mysqli_query($conn, $sql);
                                         if ($result->num_rows > 0) {
                                             // output data of each row
-                                            $rows = array();
+                                            $rows2 = array();
                                             $i =0;
                                             while($r = mysqli_fetch_assoc($result)) {
-                                            $rows[] = $r;
+                                            $rows2[] = $r;
                                             $img[] = $rows[$i]['meta_value'];
                                             $i++;
                                             }
                                         } else {
-                                            $rows[]= NULL;
+                                            $rows2[]= NULL;
                                         } 
                                     ?>
                                     <?php echo $img[0];?>
