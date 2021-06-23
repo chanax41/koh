@@ -1,0 +1,9 @@
+[19-Jun-2021 18:49:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:49:26 UTC] PHP Notice:  Undefined variable: con in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:49:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:49:39 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:49:39 UTC] PHP Notice:  Undefined variable: con in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:49:39 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:50:32 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:50:32 UTC] PHP Notice:  Undefined variable: con in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7
+[19-Jun-2021 18:50:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/cp896519/public_html/tour/admin-tour/html/includes/conn.php on line 7

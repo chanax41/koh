@@ -1,0 +1,100 @@
+<?php require_once('./check.php');?>
+<?php 
+    require_once('includes/conn.php');
+    mysqli_query($conn, "SET NAMES 'utf8'");
+    
+    $sql = "SELECT content_key,content_value FROM t_content  WHERE content_page = 'team' ";
+    // Check connection
+    $result = mysqli_query($conn, $sql);
+
+    if (empty($result)){
+		die("Connection failed: ".$conn->error);
+        echo "<script>";
+            echo "alert(\"ข้อมูลไม่ถูกต้อง \");"; 
+            echo "window.location.href = 'manage_web_pages.php'";
+        echo "</script>";
+	} else if ($result->num_rows > 0) {
+        // output data of each row
+        $rows = array();
+        while($r = mysqli_fetch_assoc($result)) {
+            $rows[] = $r;
+        }
+        $img_url = $rows[0]['content_value'];
+        $discription = $rows[1]['content_value'];
+    } 
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PHPJabbers.com | Free Travel Agency Website Template</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body>
+ 
+    <?php include('includes/header.php');?>
+      
+    <section class="banner banner-secondary" id="top" style="background-image: url(img/banner-image-3-1920x300.jpg); height: 200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="banner-caption">
+                        <div class="line-dec"></div>
+                        <h2>Terms</h2>
+                        <h4>ทีมของเราในเกาะพะลวย</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="popular-places">
+            <div class="container">
+                <h4>ทีมของเรา</h4>
+                <img src="<?php echo $img_url;?>" width=100% ></img>
+                <hr />
+                <h3><?php echo $discription; ?></h3>
+            </div>
+        </section>
+
+        <section class="popular-places">
+            <div class="container text-center">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+
+                <br>
+
+                <div class="blue-button">
+                    <a href="contact.php">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include('includes/footer.php');?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
