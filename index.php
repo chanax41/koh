@@ -125,18 +125,17 @@
                 <div class="row">
                 <?php foreach ($rows as $value) { ?>
                     <?php 
-                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 2';
+                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 1';
                     echo $sql;
                     $result2 = mysqli_query($conn, $sql);
                     if ($result2->num_rows > 0) {
                     // output data of each row
-                        $img[] = "img/product-5-720x480.jpg";
                         $rows2 = array();
                         $i =0;
                         while($r = mysqli_fetch_assoc($result2)) {
-                        $rows2[] = $r;
-                        $img[] = $rows2[$i]['meta_value'];
-                        $i++;
+                            $rows2[] = $r;
+                            $img[] = $rows2[$i]['meta_value'];
+                            $i++;
                         }
                     } else {
                         $rows2[]= NULL;
