@@ -125,7 +125,7 @@
                 <div class="row">
                 <?php foreach ($rows as $value) { ?>
                     <?php 
-                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 6';
+                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 2';
                     $result2 = mysqli_query($conn, $sql);
                     if ($result2->num_rows > 0) {
                     // output data of each row
@@ -135,18 +135,25 @@
                         $rows2[] = $r;
                         $img[] = $rows2[$i]['meta_value'];
                         $i++;
+                        echo '<div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="featured-item">
+                                    <div class="thumb">
+                                        <div class="thumb-img">
+                                            <img src="'.$img[0].'" alt="" class="img-responsive wc-image">
+                                        </div>';
+
                         }
                     } else {
                         $rows2[]= NULL;
                         $img[] = "img/product-5-720x480.jpg";
+                        echo '<div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="featured-item">
+                                    <div class="thumb">
+                                        <div class="thumb-img">
+                                            <img src="'.$img[0].'" alt="" class="img-responsive wc-image">
+                                        </div>';
                     } 
                  ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="featured-item">
-                            <div class="thumb">
-                                <div class="thumb-img">
-                                    <img src="<?php echo $img[0];?>" alt="" class="img-responsive wc-image">
-                                </div>
 
                                 <div class="overlay-content">
                                     <strong title="Nights"><i class="fa fa-calendar"></i> <?php echo $value['Time']; ?></strong> &nbsp;&nbsp;&nbsp;&nbsp;
