@@ -144,7 +144,8 @@
                                             $rows[]= NULL;
                                         } 
                                     ?>
-                                    <img src="<?php echo $img[0];?>" alt="">
+                                    <?php echo $img[0];?>
+                                    <img src="<?php echo $img[0];?>" alt="" class="img-responsive wc-image">
                                 </div>
 
                                 <div class="overlay-content">
