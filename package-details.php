@@ -31,7 +31,7 @@
       if(!empty($_GET['name'])){
 
         $name = $_GET['name'];
-        $sql = 'SELECT * FROM t_package where Status = "ACTIVE" and Name="'.$name.'" ORDER BY ID DESC ';
+        $sql = 'SELECT * FROM t_package where Status = "ACTIVE" and Name="'.$name.'"';
         $result = mysqli_query($conn, $sql);
         $count = $result->num_rows;
         if ($result->num_rows > 0) {
@@ -69,7 +69,7 @@
         </div>
     </section>
     <?php 
-      $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'"';
+      $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'"  ORDER BY ID DESC ';
       $result = mysqli_query($conn, $sql);
       if ($result->num_rows > 0) {
         // output data of each row
