@@ -42,13 +42,12 @@ if($Username == $check_email){
 
             if($stmt->error == NULL ){ 
                 require_once('email/config_email.php');
-                $mail->Username = $gmail_username;
-                $mail->Password = $gmail_password;
-                $mail->setFrom($email_sender, $sender);
+                $subject = 'เปลี่ยนรหัสผ่าน';
+                $mail->Subject = $subject;
                 $mail->addAddress($email_receiver);
                 $mail->Subject = $subject;
 
-                $link_verify = $_SERVER['HTTP_HOST']."/tour/reset_verify.php?email=$email_receiver&code=$digit_verify";
+                $link_verify = $_SERVER['HTTP_HOST']."/reset_verify.php?email=$email_receiver&code=$digit_verify";
                 $email_content = "
                     <!DOCTYPE html>
                     <html>
