@@ -56,12 +56,12 @@ if($Username == $check_email){
                         </head>
                         <body>
                             <h1 style='background: #3b434c;padding: 10px 0 20px 10px;margin-bottom:10px;font-size:30px;color:white;' >
-                                <img src='https://cms.dmpcdn.com/travel/2020/04/14/734c2e30-7e4f-11ea-a85e-972275699d5e_original.jpg' style='width: 200px;'>
+                                <img src='https://verif-y.com/wp-content/uploads/2020/07/Verif-y-logo.png' style='width: 200px;'>
                                 หนีโซเชียลเที่ยวเกาะพะลวย
                             </h1>
                             <div style='padding:20px;'>
                                 <div style='text-align:center;margin-bottom:50px;'>
-                                    <img src='img/footer.jpg' style='width:100%' />					
+                                    <img src='https://cms.dmpcdn.com/travel/2020/04/14/734c2e30-7e4f-11ea-a85e-972275699d5e_original.jpg' style='width:100%' />					
                                 </div>
                                 <div>				
                                     <h2>การกู้รหัสผ่าน สำหรับ Apple : <strong style='color:#0000ff;'></strong></h2>
