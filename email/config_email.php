@@ -14,7 +14,7 @@ $mail->IsHTML(true);
 $mail->Username = "notreply@xn--12c2dmlk5cbn8j.com";
 $mail->Password = "#asd0960404810";
 
-$sender = "IBS Support"; // ชื่อผู้ส่ง
+$sender = "KohPhaluay Support"; // ชื่อผู้ส่ง
 $email_sender = "notreply@xn--12c2dmlk5cbn8j.com"; // เมล์ผู้ส่ง 
 
 $mail->SetFrom($email_sender,$sender);

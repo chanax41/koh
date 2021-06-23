@@ -45,7 +45,6 @@ if($Username == $check_email){
                 $subject = 'เปลี่ยนรหัสผ่าน';
                 $mail->Subject = $subject;
                 $mail->addAddress($email_receiver);
-                $mail->Subject = $subject;
 
                 $link_verify = $_SERVER['HTTP_HOST']."/reset_verify.php?email=$email_receiver&code=$digit_verify";
                 $email_content = "
@@ -75,7 +74,7 @@ if($Username == $check_email){
                                     <hr>
                                     <address>
                                         <h4>ติดต่อสอบถาม</h4>
-                                        <p>Apple Thailand</p>
+                                        <p>KohPhaluay Thailand</p>
                                         <p>เกาะพะลวย.com</p>
                                     </address>
                                 </div>

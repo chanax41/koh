@@ -39,12 +39,12 @@ if($Username == $check_email){
                         </head>
                         <body>
                             <h1 style='background: #3b434c;padding: 10px 0 20px 10px;margin-bottom:10px;font-size:30px;color:white;' >
-                                <img src='https://comrad.co.nz/wp-content/uploads/2017/04/verify-logo-300x111.png' style='width: 200px;'>
+                                <img src=''https://cms.dmpcdn.com/travel/2020/04/14/734c2e30-7e4f-11ea-a85e-972275699d5e_original.jpg' style='width: 200px;'>
                                 หนีโซเชียลเที่ยวเกาะพะลวย
                             </h1>
                             <div style='padding:20px;'>
                                 <div style='text-align:center;margin-bottom:50px;'>
-                                    <img src='http://cdn.wccftech.com/wp-content/uploads/2017/02/Apple-logo.jpg' style='width:100%' />					
+                                    <img src='img/footer.jpg' style='width:100%' />					
                                 </div>
                                 <div>				
                                     <h2>ยืนยันการสมัครสมาชิก : <strong style='color:#0000ff;'></strong></h2>
@@ -57,14 +57,14 @@ if($Username == $check_email){
                                     <hr>
                                     <address>
                                         <h4>ติดต่อสอบถาม</h4>
-                                        <p>Apple Thailand</p>
-                                        <p>www.facebook.com/apple</p>
+                                        <p>KohPhaluay Thailand</p>
+                                        <p>เกาะพะลวย.com</p>
                                     </address>
                                 </div>
                             </div>
                             <div style='background: #3b434c;color: #a2abb7;padding:30px;'>
                                 <div style='text-align:center'> 
-                                    2016 © Apple Thailand
+                                    2021 © KohPhaluay  Thailand
                                 </div>
                             </div>
                         </body>
