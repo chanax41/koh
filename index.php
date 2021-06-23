@@ -123,27 +123,28 @@
                     }    
                 ?>
                 <div class="row">
+                <?php 
+                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 2';
+                    $result2 = mysqli_query($conn, $sql);
+                    if ($result2->num_rows > 0) {
+                    // output data of each row
+                        $rows2 = array();
+                        $i =0;
+                        while($r = mysqli_fetch_assoc($result2)) {
+                        $rows2[] = $r;
+                        $img[] = $rows2[$i]['meta_value'];
+                        $i++;
+                        }
+                    } else {
+                        $rows2[]= NULL;
+                        $img[] = "img/product-5-720x480.jpg";
+                    } 
+                 ?>
                 <?php foreach ($rows as $value) { ?>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="featured-item">
                             <div class="thumb">
                                 <div class="thumb-img">
-                                    <?php 
-                                        $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 2';
-                                        $result2 = mysqli_query($conn, $sql);
-                                        if ($result2->num_rows > 0) {
-                                            // output data of each row
-                                            $rows2 = array();
-                                            $i =0;
-                                            while($r = mysqli_fetch_assoc($result2)) {
-                                            $rows2[] = $r;
-                                            $img[] = $rows2[$i]['meta_value'];
-                                            $i++;
-                                            }
-                                        } else {
-                                            $rows2[]= NULL;
-                                        } 
-                                    ?>
                                     <?php echo $img[0];?>
                                     <img src="<?php echo $img[0];?>" alt="" class="img-responsive wc-image">
                                 </div>
@@ -282,7 +283,7 @@
                         <div class="thumb">
                             <img src="<?php echo $value['content_value'] ;?>" alt="" width=100% style="max-height: 200px">
                             <div class="text-content">
-                                <img src="<?php echo $value['content_value'] ;?>" alt="">
+                                <img src="<?php echo $value['content_value'] ;?>" alt="" width=100% style="max-height: 200px">
                             </div>
                             <div class="plus-button">
                                 <a href="testimonials.php"><i class="fa fa-plus"></i></a>
