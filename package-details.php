@@ -106,7 +106,7 @@
                       <?php 
                         foreach ($img as $item) {
                       ?>
-                        <div class="col-sm-4 col-xs-6">
+                        <div class="gallery_product col-sm-4 col-xs-6">
                           <div class="form-group">
                               <img src="<?php echo $item; ?>" alt="" class="img-responsive" width = 200px>
                           </div>
