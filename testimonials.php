@@ -73,15 +73,17 @@
                 <?php 
                     foreach ($rows as $value) {
                 ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="item popular-item">
-                            <div class="thumb">
-                                <div class="thumb-img">
-                                    <a href="<?php echo $value['content_value'] ;?>" target="_blank"> <img src="<?php echo $value['content_value'] ;?>" alt=""> </a>
+                    <a href="<?php echo $value['content_value'] ;?>" target="_blank"> 
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="item popular-item">
+                                <div class="thumb">
+                                    <div class="thumb-img">
+                                        <img src="<?php echo $value['content_value'] ;?>" alt=""> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 <?php
                     }
                 ?>
