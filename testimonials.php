@@ -77,12 +77,12 @@
                         <div class="item popular-item">
                             <div class="thumb">
                                 <div class="thumb-img">
-                                    <img src="<?php echo $value['content_value'] ;?>" alt="">
+                                    <a src ="<?php echo $value['content_value'] ;?>"><img src="<?php echo $value['content_value'] ;?>" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
                 <?php
                     }
                 ?>
