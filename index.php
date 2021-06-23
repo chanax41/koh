@@ -130,6 +130,7 @@
                     if ($result2->num_rows > 0) {
                     // output data of each row
                         $rows2 = array();
+                        $img = array();
                         $i =0;
                         while($r = mysqli_fetch_assoc($result2)) {
                             $rows2[] = $r;
