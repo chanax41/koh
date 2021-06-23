@@ -106,9 +106,9 @@
                       <?php 
                         foreach ($img as $item) {
                       ?>
-                        <div class="img-fluid img-thumbnail col-sm-4 col-xs-6">
+                        <div class="img-fluid col-sm-4 col-xs-6">
                           <div class="form-group">
-                            <a href="<?php echo $item; ?>"><img src="<?php echo $item; ?>" alt="" class="img-responsive" style="max-height: 200px"></a>
+                            <a href="<?php echo $item; ?>"><img src="<?php echo $item; ?>" alt="" class="img-responsive" style="max-height: 100px"></a>
                           </div>
                         </div>
                       <?php
