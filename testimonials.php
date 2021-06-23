@@ -77,7 +77,7 @@
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="item popular-item">
                                 <div class="thumb">
-                                    <div>
+                                    <div class="thumb-img">
                                         <img src="<?php echo $value['content_value'] ;?>" alt=""> 
                                     </div>
                                 </div>
