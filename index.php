@@ -137,7 +137,7 @@
                                             $i =0;
                                             while($r = mysqli_fetch_assoc($result)) {
                                             $rows2[] = $r;
-                                            $img[] = $rows[$i]['meta_value'];
+                                            $img[] = $rows2[$i]['meta_value'];
                                             $i++;
                                             }
                                         } else {
@@ -280,7 +280,7 @@
                 ?>
                     <div class="item popular-item">
                         <div class="thumb">
-                            <img src="<?php echo $value['content_value'] ;?>" alt="">
+                            <img src="<?php echo $value['content_value'] ;?>" alt="" style="max-higth: 200px">
                             <div class="text-content">
                                 <img src="<?php echo $value['content_value'] ;?>" alt="">
                             </div>
