@@ -108,7 +108,7 @@
                       ?>
                         <div class="gallery_product col-sm-4 col-xs-6">
                           <div class="form-group">
-                              <img src="<?php echo $item; ?>" alt="" class="img-responsive" width = 200px>
+                            <a href="<?php echo $item; ?>"><img src="<?php echo $item; ?>" alt="" class="img-responsive" width = 200px></a>
                           </div>
                         </div>
                       <?php
