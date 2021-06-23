@@ -126,6 +126,7 @@
                 <?php foreach ($rows as $value) { ?>
                     <?php 
                     $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 2';
+                    echo $sql;
                     $result2 = mysqli_query($conn, $sql);
                     if ($result2->num_rows > 0) {
                     // output data of each row
