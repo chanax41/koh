@@ -281,9 +281,7 @@
                 ?>
                     <div class="item popular-item">
                         <div class="thumb">
-                            <div class="text-content">
-                                <img src="<?php echo $value['content_value'] ;?>" alt="" width=200px style="max-height: 200px" class="img-responsive wc-image">
-                            </div>
+                            <img src="<?php echo $value['content_value'] ;?>" alt="" width=200px style="max-height: 200px" class="img-responsive wc-image">
                             <div class="plus-button">
                                 <a href="testimonials.php"><i class="fa fa-plus"></i></a>
                             </div>
