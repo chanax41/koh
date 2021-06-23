@@ -124,7 +124,7 @@
                 ?>
                 <div class="row">
                 <?php 
-                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 2';
+                    $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$value['Name'].'" ORDER BY ID DESC limit 6';
                     $result2 = mysqli_query($conn, $sql);
                     if ($result2->num_rows > 0) {
                     // output data of each row
