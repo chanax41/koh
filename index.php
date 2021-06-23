@@ -128,7 +128,23 @@
                         <div class="featured-item">
                             <div class="thumb">
                                 <div class="thumb-img">
-                                    <img src="img/product-1-720x480.jpg" alt="">
+                                    <?php 
+                                        $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 2';
+                                        $result = mysqli_query($conn, $sql);
+                                        if ($result->num_rows > 0) {
+                                            // output data of each row
+                                            $rows = array();
+                                            $i =0;
+                                            while($r = mysqli_fetch_assoc($result)) {
+                                            $rows[] = $r;
+                                            $img[] = $rows[$i]['meta_value'];
+                                            $i++;
+                                            }
+                                        } else {
+                                            $rows[]= NULL;
+                                        } 
+                                    ?>
+                                    <img src="<?php echo $img[0];?>" alt="">
                                 </div>
 
                                 <div class="overlay-content">
