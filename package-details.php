@@ -69,7 +69,7 @@
         </div>
     </section>
     <?php 
-      $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC ';
+      $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 6';
       $result = mysqli_query($conn, $sql);
       if ($result->num_rows > 0) {
         // output data of each row
