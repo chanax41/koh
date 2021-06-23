@@ -77,7 +77,7 @@
                         <div class="item popular-item">
                             <div class="thumb">
                                 <div class="thumb-img">
-                                    <a href="<?php echo $value['content_value'] ;?>"><img src="<?php echo $value['content_value'] ;?>" alt=""></a>
+                                    <a href="<?php echo $value['content_value'] ;?>"> <img src="<?php echo $value['content_value'] ;?>" alt=""> </a>
                                 </div>
                             </div>
                         </div>
