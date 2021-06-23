@@ -240,7 +240,7 @@
                                         <div class="col-lg-4">
                                           <center>
                                             <h3>ประชาสัมพันธ์</h3>
-                                            <img src="<?php echo $img_url_book; ?>"  width="480" >
+                                            <img src="<?php echo $img_url_book; ?>"  width="480" style="max-height: 100px">
                                           </center>
                                         </div>
                                     </div>
