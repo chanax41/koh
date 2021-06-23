@@ -31,7 +31,7 @@
       if(!empty($_GET['name'])){
 
         $name = $_GET['name'];
-        $sql = 'SELECT * FROM t_package where Status = "ACTIVE" and Name="'.$name.'"';
+        $sql = 'SELECT * FROM t_package where Status = "ACTIVE" and Name="'.$name.'" ORDER BY ID DESC ';
         $result = mysqli_query($conn, $sql);
         $count = $result->num_rows;
         if ($result->num_rows > 0) {
