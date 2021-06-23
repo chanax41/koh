@@ -136,18 +136,17 @@
                         $rows2[] = $r;
                         $img[] = $rows2[$i]['meta_value'];
                         $i++;
-                        echo '<div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="featured-item">
-                                    <div class="thumb">
-                                        <div class="thumb-img">
-                                            <img src="'.$img[0].'" alt="" class="img-responsive wc-image">
-                                        </div>';
-
                         }
                     } else {
                         $rows2[]= NULL;
                         $img[] = "img/product-5-720x480.jpg";
                     } 
+                    echo '<div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="featured-item">
+                                    <div class="thumb">
+                                        <div class="thumb-img">
+                                            <img src="'.$img[0].'" alt="" class="img-responsive wc-image">
+                                        </div>';
                  ?>
 
                                 <div class="overlay-content">
