@@ -142,6 +142,7 @@
                         $rows2[]= NULL;
                         $img[] = "img/product-5-720x480.jpg";
                     } 
+                    echo $img[0];
                     echo '<div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="featured-item">
                                     <div class="thumb">
