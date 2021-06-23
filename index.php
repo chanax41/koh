@@ -130,12 +130,12 @@
                                 <div class="thumb-img">
                                     <?php 
                                         $sql = 'SELECT * FROM t_package_meta where meta_key = "img_pack" and Name="'.$name.'" ORDER BY ID DESC limit 2';
-                                        $result = mysqli_query($conn, $sql);
-                                        if ($result->num_rows > 0) {
+                                        $result2 = mysqli_query($conn, $sql);
+                                        if ($result2->num_rows > 0) {
                                             // output data of each row
                                             $rows2 = array();
                                             $i =0;
-                                            while($r = mysqli_fetch_assoc($result)) {
+                                            while($r = mysqli_fetch_assoc($result2)) {
                                             $rows2[] = $r;
                                             $img[] = $rows2[$i]['meta_value'];
                                             $i++;
@@ -280,7 +280,7 @@
                 ?>
                     <div class="item popular-item">
                         <div class="thumb">
-                            <img src="<?php echo $value['content_value'] ;?>" alt="" style="max-higth: 200px">
+                            <img src="<?php echo $value['content_value'] ;?>" alt="" style="max-height: 200px">
                             <div class="text-content">
                                 <img src="<?php echo $value['content_value'] ;?>" alt="">
                             </div>
